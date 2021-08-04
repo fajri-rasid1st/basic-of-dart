@@ -4,17 +4,17 @@ abstract class Performer {
   void perform();
 }
 
-mixin Dancer implements Performer {
-  @override
-  void perform() {
-    print('dancing');
-  }
-}
-
 mixin Singer implements Performer {
   @override
   void perform() {
     print('singing');
+  }
+}
+
+mixin Dancer implements Performer {
+  @override
+  void perform() {
+    print('dancing');
   }
 }
 

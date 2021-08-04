@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' as math;
 // abstract class dan interface
 
 // Abstract class
@@ -19,6 +19,11 @@ abstract class BangunDatar {
     print('luas     : $luas');
     print('keliling : $keliling');
   }
+
+  // round result to 2 decimal places
+  num roundToTwoDecimalPlaces(num result) {
+    return (result * 100).roundToDouble() / 100;
+  }
 }
 
 // interface
@@ -37,12 +42,12 @@ class Persegi extends BangunDatar implements Operasi {
 
   @override
   void cariLuas() {
-    _luas = _sisi * _sisi;
+    _luas = roundToTwoDecimalPlaces(_sisi * _sisi);
   }
 
   @override
   void cariKeliling() {
-    _keliling = 4 * _sisi;
+    _keliling = roundToTwoDecimalPlaces(4 * _sisi);
   }
 }
 
@@ -54,12 +59,12 @@ class PersegiPanjang extends BangunDatar implements Operasi {
 
   @override
   void cariLuas() {
-    _luas = _sisi1 * _sisi2;
+    _luas = roundToTwoDecimalPlaces(_sisi1 * _sisi2);
   }
 
   @override
   void cariKeliling() {
-    _keliling = 2 * (_sisi1 + _sisi2);
+    _keliling = roundToTwoDecimalPlaces(2 * (_sisi1 + _sisi2));
   }
 }
 
@@ -71,11 +76,11 @@ class Lingkaran extends BangunDatar implements Operasi {
 
   @override
   void cariLuas() {
-    _luas = num.parse((pi * pow(_jari_jari, 2)).toStringAsFixed(2));
+    _luas = roundToTwoDecimalPlaces(math.pi * math.pow(_jari_jari, 2));
   }
 
   @override
   void cariKeliling() {
-    _keliling = num.parse((2 * pi * _jari_jari).toStringAsFixed(2));
+    _keliling = roundToTwoDecimalPlaces(2 * math.pi * _jari_jari);
   }
 }

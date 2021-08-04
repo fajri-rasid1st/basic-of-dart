@@ -30,7 +30,7 @@ abstract class Animal {
 
   void poop() {
     print('$_name is pooping');
-    _weight -= 0.2;
+    _weight -= 0.25;
   }
 
   void status() {

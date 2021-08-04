@@ -31,6 +31,7 @@ void main(List<String> args) {
 
   // insert
   ordinary.insert(0, 0);
+  printList(ordinary);
 
   // ubah indeks tertentu
   ordinary[0] = null;

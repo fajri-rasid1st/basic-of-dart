@@ -75,5 +75,13 @@ String calculateScore(num score) {
 // aplikasi kalkulator sederhana
 num simpleCalculator(num x, num y, int c) {
   // ternary operator
-  return c == 1 ? x + y : c == 2 ? x - y : c == 3 ? x * y : c == 4 ? x ~/ y : 0;
+  return c == 1
+      ? x + y
+      : c == 2
+          ? x - y
+          : c == 3
+              ? x * y
+              : c == 4
+                  ? x / y
+                  : 0;
 }

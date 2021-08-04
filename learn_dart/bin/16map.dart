@@ -29,15 +29,39 @@ void main(List<String> args) {
   print(capital.containsValue('japan'));
 
   // for each pada map
-  capital.forEach((var key, var value) => {
-        key == capital.keys.last
-            ? stdout.write('${capital[key]}.')
-            : stdout.write('${capital[key]}, ')
-      });
+  capital.forEach((var key, var value) {
+    key == capital.keys.last
+        ? stdout.write('${capital[key]}.')
+        : stdout.write('${capital[key]}, ');
+  });
+
   print('');
-  capital.keys.forEach((var item) => {
-        item == capital.keys.last
-            ? stdout.write('$item.')
-            : stdout.write('$item, ')
-      });
+
+  capital.keys.forEach((var item) {
+    item == capital.keys.last
+        ? stdout.write('$item.')
+        : stdout.write('$item, ');
+  });
+
+  print('');
+
+  // addAll
+  capital.addAll({'sanghai': 'china'});
+  print(capital);
+
+  // remove
+  print(capital.remove('london'));
+  print(capital);
+
+  // updateAll
+  capital.updateAll((var key, var value) => null);
+  print(capital);
+
+  // update
+  capital.update('sanghai', (var value) => 'mars');
+  print(capital);
+
+  // clear
+  capital.clear();
+  print(capital);
 }

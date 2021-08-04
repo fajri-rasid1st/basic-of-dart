@@ -1,4 +1,5 @@
 // variabel dan tipe data
+
 void main(List<String> args) {
   // inisialisasi variable dengan var
   var a = 'hello world!';
@@ -12,8 +13,8 @@ void main(List<String> args) {
       'String : $a\nint : $b\ndouble : $c\nbool : $d\nnum : $e\nlist : $f\nmap : $g\n');
 
   // inisialisasi variable dengan type data
-  /* "omit type annotations for local variables" untuk variabel lokal, tidak disarankan menggunakan anotasi type data */
-
+  // "omit type annotations for local variables" untuk variabel lokal
+  // tidak disarankan menggunakan anotasi type data, contohnya:
   // bool x = true;
   // String y = '';
   // List z = [1, 2, 3];

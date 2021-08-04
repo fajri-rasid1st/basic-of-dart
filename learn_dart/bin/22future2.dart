@@ -2,7 +2,7 @@
 
 import '21future.dart';
 
-void main(List<String> args) async {
+Future<void> main(List<String> args) async {
   print('getting your order....');
   try {
     var order = await getOrder('ayam goyeng', 25000, stock: false);

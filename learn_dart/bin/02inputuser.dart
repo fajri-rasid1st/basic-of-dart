@@ -9,7 +9,7 @@ void main(List<String> args) {
   x = stdin.readLineSync();
 
   stdout.write('Usia anda : ');
-  y = num.parse(stdin.readLineSync());
+  y = num.tryParse(stdin.readLineSync());
 
-  print('Halo $x, Usia anda adalah $y tahun.');
+  print('Halo $x, Usia anda adalah ${y ?? 0} tahun.');
 }

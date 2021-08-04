@@ -6,7 +6,7 @@ void main(List<String> args) {
   var c = <num>[1, 2, 3, 2, 1];
 
   // Convert set -> list
-  print(b.toList(growable: false));
+  print(b.toList(growable: true));
 
   // Convert list -> set
   print(c.toSet());
@@ -22,12 +22,13 @@ void main(List<String> args) {
 
   // difference (semua yang ada di a dan tidak ada di b)
   print(a.difference(b));
+  print(b.difference(a));
 
   // every
   print(a.every((var element) => !element.isNegative));
 
   // remove
-  a.remove(1);
+  a.remove(5);
   print(a);
 
   // clear

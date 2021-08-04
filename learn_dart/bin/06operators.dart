@@ -3,8 +3,8 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  var x = stdin.readLineSync().split(' ');
-  var y = num.tryParse(x[0]), z = num.tryParse(x[1]);
+  var x = stdin.readLineSync().split(' ').map((e) => num.tryParse(e)).toList();
+  var y = x[0], z = x[1];
 
   // aritmatic operator
   print(y + z);

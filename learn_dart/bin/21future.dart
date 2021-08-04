@@ -18,9 +18,9 @@ Future<String> getOrder(String order, int payment, {bool stock = false}) {
     var isEmpty = stock;
 
     if (isEmpty) {
-      throw 'Our stock is empty.';
+      throw 'Our stock is empty.'; // error
     } else {
-      return 'your order : $order\npayment    : Rp.$payment';
+      return 'your order : $order\npayment    : Rp.$payment'; // value
     }
   });
 }

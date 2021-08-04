@@ -10,6 +10,7 @@ extension SortingReverse on List<int> {
 
     for (var i = 0; i < list.length - 1; i++) {
       var min = i;
+
       for (var j = i + 1; j < length; j++) {
         if (list[j] < list[min]) {
           min = j;
