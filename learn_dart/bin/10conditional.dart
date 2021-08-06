@@ -5,6 +5,7 @@ import 'dart:io';
 void main(List<String> args) {
   while (true) {
     stdout.write('Pilih Aplikasi :\n1. Penentuan Nilai\n2. Kalkulator\n> ');
+
     try {
       var choice = int.parse(stdin.readLineSync());
       // switch case
@@ -22,6 +23,7 @@ void main(List<String> args) {
               break;
             }
           }
+
           break;
         case 2:
           while (true) {
@@ -45,6 +47,7 @@ void main(List<String> args) {
               break;
             }
           }
+
           break;
         default:
           print('\ninvalid command!\n');
