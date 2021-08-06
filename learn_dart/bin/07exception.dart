@@ -12,8 +12,8 @@ void main(List<String> args) {
     print('wrong input');
   } on IntegerDivisionByZeroException {
     print('can\'t divide by zero');
-  } catch (e) {
-    // print(e);
+  } catch (_, s) {
+    print(s);
   } finally {
     print('ok');
   }

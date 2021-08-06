@@ -4,7 +4,6 @@ import 'dart:io';
 import 'dart:math' as math;
 
 // global scope variable
-// constanta dan final
 const num pi_1 = 3.14;
 final num pi_2 = math.pi;
 
