@@ -1,6 +1,6 @@
 import 'package:learn_dart/extensionsort.dart';
 
 void main(List<String> args) {
-  var list = [2, 4, 6, 7, 5, 1, 3, 10, 8, 9].sortReverse();
-  print(list);
+  var list = [20, 31, 13, 8, 49, 54, 37, 23, 50, 9];
+  print(list.sortReverse());
 }

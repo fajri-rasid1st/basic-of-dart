@@ -1,21 +1,20 @@
-// enum Rainbow { red, orange, yellow, green, blue, indigo, violet }
 enum Status { In_Progress, Todo, In_Review, Done }
 
 void main(List<String> args) {
-  // print(Rainbow.values);
-  // print(Rainbow.violet.index);
-  // print(Rainbow.green);
+  var s = MyStatus(taskStatus: Status.In_Review);
 
-  var s = MyStatus(taskStatus: Status.In_Progress);
   s.statusInfo();
   s.greet();
-
   print('');
 
   // cascade notation
-  MyStatus(taskStatus: Status.Todo)
+  MyStatus(taskStatus: Status.In_Progress)
     ..statusInfo()
     ..greet();
+
+  print('');
+  print(Status.values);
+  print(Status.Done.index);
 }
 
 class MyStatus {
