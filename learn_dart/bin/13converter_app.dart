@@ -47,37 +47,25 @@ void main(List<String> args) {
   }
 }
 
-List celciusConverter(num c) {
+List<num> celciusConverter(num c) {
   var result = <num>[((9 / 5) * c) + 32, c + 273];
 
-  for (var i = 0; i < result.length; i++) {
-    if (result[i] == result[i].toInt()) {
-      result[i] = result[i].toInt();
-    } else {
-      result[i] = double.parse(result[i].toStringAsFixed(2));
-    }
-  }
-
-  return result;
+  return roundResult(result);
 }
 
-List fahrenheitConverter(num f) {
+List<num> fahrenheitConverter(num f) {
   var result = <num>[5 / 9 * (f - 32), 5 / 9 * (f - 32) + 273];
 
-  for (var i = 0; i < result.length; i++) {
-    if (result[i] == result[i].toInt()) {
-      result[i] = result[i].toInt();
-    } else {
-      result[i] = double.parse(result[i].toStringAsFixed(2));
-    }
-  }
-
-  return result;
+  return roundResult(result);
 }
 
-List kelvinConverter(num k) {
+List<num> kelvinConverter(num k) {
   var result = <num>[k - 273, 9 / 5 * (k - 273) + 32];
 
+  return roundResult(result);
+}
+
+List<num> roundResult(List<num> result) {
   for (var i = 0; i < result.length; i++) {
     if (result[i] == result[i].toInt()) {
       result[i] = result[i].toInt();

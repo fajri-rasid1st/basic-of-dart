@@ -25,7 +25,7 @@ void main(List<String> args) {
   print(b.difference(a));
 
   // every
-  print(a.every((var element) => !element.isNegative));
+  print(a.every((element) => !element.isNegative));
 
   // remove
   a.remove(5);

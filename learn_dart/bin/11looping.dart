@@ -43,7 +43,7 @@ void main(List<String> args) {
   print('$min angka prima pertama adalah :');
 
   // for each easter egg
-  primes.forEach((var prime) => {stdout.write('$prime ')});
+  primes.forEach((prime) => {stdout.write('$prime ')});
 
   print('');
 
@@ -59,7 +59,7 @@ void main(List<String> args) {
   }
 
   print('bilangan ganjil dalam range 1 - $min_2 adalah :');
-  odds.forEach((var element) => {stdout.write('$element ')});
+  odds.forEach((element) => {stdout.write('$element ')});
 
   print('');
 

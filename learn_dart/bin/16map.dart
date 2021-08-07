@@ -5,8 +5,8 @@ import 'dart:io';
 void main(List<String> args) {
   var capital = <String, String>{
     'jakarta': 'indonesia',
-    'london': 'inggris',
-    'tokyo': 'japan'
+    'london': 'england',
+    'tokyo': 'japan',
   };
 
   // tampilkan value dari key tertentu
@@ -29,24 +29,20 @@ void main(List<String> args) {
   print(capital.containsValue('japan'));
 
   // for each pada map
-  capital.forEach((var key, var value) {
+  capital.forEach((key, value) {
     key == capital.keys.last
-        ? stdout.write('${capital[key]}.')
-        : stdout.write('${capital[key]}, ');
+        ? stdout.write('$value.\n')
+        : stdout.write('$value, ');
   });
 
-  print('');
-
-  capital.keys.forEach((var item) {
+  capital.keys.forEach((item) {
     item == capital.keys.last
-        ? stdout.write('$item.')
+        ? stdout.write('$item.\n')
         : stdout.write('$item, ');
   });
 
-  print('');
-
   // addAll
-  capital.addAll({'sanghai': 'china'});
+  capital.addAll({'sanghai': 'china', 'roma': 'italy', 'paris': 'france'});
   print(capital);
 
   // remove
@@ -54,11 +50,11 @@ void main(List<String> args) {
   print(capital);
 
   // updateAll
-  capital.updateAll((var key, var value) => null);
+  capital.updateAll((_, value) => value + 'os');
   print(capital);
 
   // update
-  capital.update('sanghai', (var value) => 'mars');
+  capital.update('sanghai', (value) => 'mars');
   print(capital);
 
   // clear
