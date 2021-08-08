@@ -1,4 +1,4 @@
-// variabel dan tipe data
+// Variabel dan tipe data
 
 void main(List<String> args) {
   // inisialisasi variable dengan var

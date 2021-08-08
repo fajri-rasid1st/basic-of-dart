@@ -1,4 +1,4 @@
-// mengambil input user
+// Mengambil input user
 
 import 'dart:io';
 

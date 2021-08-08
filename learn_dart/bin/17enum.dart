@@ -1,3 +1,5 @@
+// Enum & cascade notation
+
 enum Status { In_Progress, Todo, In_Review, Done }
 
 void main(List<String> args) {
