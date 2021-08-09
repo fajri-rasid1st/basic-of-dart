@@ -3,24 +3,22 @@
 import 'package:meta/meta.dart';
 
 void main(List<String> args) {
-  var person = Person(name: null, age: 24);
+  var person = Person(role: null, age: 20);
 
-  print(person.status());
+  print(person.status);
 }
 
 class Person {
-  final name;
-  final age;
+  final String role;
+  final int age;
 
-  Person({@required this.name, this.age = 0}) {
+  Person({@required this.role, this.age = 0}) {
     try {
-      assert(name != null, "Don't use null for person name!");
+      assert(role != null, "Don't use null for person role!");
     } catch (e) {
       print(e.message);
     }
   }
 
-  String status() {
-    return 'name : $name\nage : $age years old';
-  }
+  String get status => 'role : $role\nage : $age years old';
 }
