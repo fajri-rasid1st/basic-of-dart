@@ -28,10 +28,10 @@ abstract class BangunDatar {
 
 // interface
 abstract class Operasi {
-  // cari keliling
-  void cariLuas();
-  // cari luas
-  void cariKeliling();
+  // hitung luas
+  void hitungLuas();
+  // hitung keliling
+  void hitungKeliling();
 }
 
 // mewarisi class bangun datar dan menginplement class operasi
@@ -41,12 +41,12 @@ class Persegi extends BangunDatar implements Operasi {
   Persegi(this._sisi);
 
   @override
-  void cariLuas() {
+  void hitungLuas() {
     _luas = roundToTwoDecimalPlaces(_sisi * _sisi);
   }
 
   @override
-  void cariKeliling() {
+  void hitungKeliling() {
     _keliling = roundToTwoDecimalPlaces(4 * _sisi);
   }
 }
@@ -58,12 +58,12 @@ class PersegiPanjang extends BangunDatar implements Operasi {
   PersegiPanjang(this._sisi1, this._sisi2);
 
   @override
-  void cariLuas() {
+  void hitungLuas() {
     _luas = roundToTwoDecimalPlaces(_sisi1 * _sisi2);
   }
 
   @override
-  void cariKeliling() {
+  void hitungKeliling() {
     _keliling = roundToTwoDecimalPlaces(2 * (_sisi1 + _sisi2));
   }
 }
@@ -75,12 +75,12 @@ class Lingkaran extends BangunDatar implements Operasi {
   Lingkaran(this._jari_jari);
 
   @override
-  void cariLuas() {
+  void hitungLuas() {
     _luas = roundToTwoDecimalPlaces(math.pi * math.pow(_jari_jari, 2));
   }
 
   @override
-  void cariKeliling() {
+  void hitungKeliling() {
     _keliling = roundToTwoDecimalPlaces(2 * math.pi * _jari_jari);
   }
 }
