@@ -11,7 +11,7 @@ class Mammal extends Animal {
   @override
   void status() {
     super.status();
-    print('fur color     : $_furColor');
+    print('fur color: $_furColor');
   }
 }
 

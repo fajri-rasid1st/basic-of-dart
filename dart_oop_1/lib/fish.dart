@@ -11,7 +11,7 @@ class Fish extends Animal {
   @override
   void status() {
     super.status();
-    print('skin color    : $_skinColor');
+    print('skin color: $_skinColor');
   }
 }
 

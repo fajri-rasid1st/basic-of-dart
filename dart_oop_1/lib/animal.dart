@@ -34,9 +34,9 @@ abstract class Animal {
   }
 
   void status() {
-    print('name          : $name');
-    print('age           : $age');
-    print('species       : ${species ?? "tidak ada"}');
-    print('weight        : ${weight.toStringAsFixed(2)}');
+    print('name: $name');
+    print('age: $age years old');
+    print('species: ${species ?? "tidak ada"}');
+    print('weight: ${weight.toStringAsFixed(2)} pound');
   }
 }

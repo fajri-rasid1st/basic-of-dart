@@ -1,12 +1,13 @@
-import 'package:dart_oop_1/mammal.dart';
+import 'package:dart_oop_1/fish.dart';
 
 void main(List<String> args) {
-  var mammal = Bat('Batman', 2, 23, 'black');
-  mammal.status();
-  mammal.species = 'Kelelawar ashiap';
-  mammal.eat();
-  mammal.poop();
-  mammal.fly();
-  mammal.walk();
-  mammal.status();
+  var flyingFish = FlyingFish('Flying fish', 100, 84.12, 'black');
+
+  flyingFish.status();
+  flyingFish.species = 'Indosiar fish';
+  flyingFish.eat();
+  flyingFish.poop();
+  flyingFish.swim();
+  flyingFish.fly();
+  flyingFish.status();
 }

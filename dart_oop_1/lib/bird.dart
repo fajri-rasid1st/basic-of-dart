@@ -11,7 +11,7 @@ class Bird extends Animal {
   @override
   void status() {
     super.status();
-    print('feathercolor  : $_featherColor');
+    print('feathercolor: $_featherColor');
   }
 }
 
