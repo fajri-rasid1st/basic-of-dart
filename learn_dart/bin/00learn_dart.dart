@@ -8,5 +8,6 @@ multi-line comment
 
 void main(List<String> args) {
   var input = '\u{1f605}';
+
   print(input);
 }

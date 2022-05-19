@@ -10,7 +10,7 @@ void main(List<String> args) {
     print(x ~/ y);
   } on NoSuchMethodError {
     print('wrong input');
-  } on IntegerDivisionByZeroException {
+  } on UnsupportedError {
     print('can\'t divide by zero');
   } catch (_, s) {
     print(s);
