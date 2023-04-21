@@ -5,7 +5,7 @@ abstract class Animal {
   // private attribute with (_) - encapsulation
   final String _name;
   final int _age;
-  String _species;
+  String species;
   double _weight;
 
   // Constructor
@@ -14,13 +14,7 @@ abstract class Animal {
   // getter - encapsulation
   String get name => _name;
   int get age => _age;
-  String get species => _species;
   double get weight => _weight;
-
-  // setter - encapsulation
-  set species(String species) {
-    _species = species;
-  }
 
   // method / behaviour
   void eat() {
